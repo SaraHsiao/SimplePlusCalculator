@@ -10,6 +10,7 @@ import UIKit
 
 class ViewController: UIViewController {
     
+    //properties
     var numTxtOne:UITextField?
     var numTxtTwo:UITextField?
     var resultLbl:UILabel?
@@ -93,7 +94,7 @@ class ViewController: UIViewController {
         
         //need to change type of TextField
         guard let num1 = Int(numTxtOne?.text ?? ""),
-            let num2 = Int(numTxtOne?.text ?? "") else {
+            let num2 = Int(numTxtTwo?.text ?? "") else {
                 
                 print("Must input Number")
                 return
